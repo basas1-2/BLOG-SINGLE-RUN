@@ -1,4 +1,4 @@
-const API = '/api';
+const API = 'https://blog-single-run.onrender.com/api';
 document.getElementById('registerForm').addEventListener('submit', async e=>{
   e.preventDefault();
   const form = e.target;

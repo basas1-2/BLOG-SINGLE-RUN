@@ -1,4 +1,4 @@
-const API = '/api';
+const API = '/https://blog-single-run.onrender.com/api';
 const token = localStorage.getItem('token');
 if (!token) { window.location = '/login.html'; }
 document.getElementById('logout').addEventListener('click', e=>{ e.preventDefault(); localStorage.removeItem('token'); localStorage.removeItem('user'); window.location = '/'; });

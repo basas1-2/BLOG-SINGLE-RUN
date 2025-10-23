@@ -1,4 +1,4 @@
-const API = '/api';
+const API = 'https://blog-single-run.onrender.com/api';
 async function loadPosts() {
   try {
     const res = await fetch(API + '/blogs');
