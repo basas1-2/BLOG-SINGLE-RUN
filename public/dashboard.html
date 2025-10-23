@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard</title><link rel="stylesheet" href="/css/style.css"></head>
+<body>
+<header class="site-header">
+  <img src="images/images (1).jpeg" alt="" class="logo">
+  <nav><a href="/">Home</a> | <a id="logout" href="#">Logout</a></nav>
+</header>
+<main class="container">
+  <h1>Your Dashboard</h1>
+  <section class="card">
+    <h2>Create a post</h2>
+    <form id="postForm" enctype="multipart/form-data">
+      <label>Title<input name="title" required></label>
+      <label>Body<textarea name="body" required></textarea></label>
+      <label>Image<input name="image" type="file" accept="image/*"></label>
+      <button>Create</button>
+      <p id="msg" class="msg"></p>
+    </form>
+  </section>
+  <section>
+    <h2>Your posts</h2>
+    <div id="my-posts" class="posts-grid"></div>
+  </section>
+</main>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>
