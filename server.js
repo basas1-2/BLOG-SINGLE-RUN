@@ -1,4 +1,5 @@
 require('dotenv').config();
+const cors = require ("cors")
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -10,6 +11,10 @@ const authRoutes = require('./routes/auth');
 const blogRoutes = require('./routes/blogs');
 
 const app = express();
+
+app.use(cors({
+  origin: "https://blog-single-run.vercel.app/"
+}));
 
 // Connect DB
 connectDB();
