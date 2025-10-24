@@ -1,10 +1,9 @@
 require('dotenv').config();
-const cors = require ("cors")
+const cors = require("cors"); // ✅ keep only this one
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const cors = require('cors');
 const connectDB = require('./config/db');
 
 const authRoutes = require('./routes/auth');
@@ -20,7 +19,6 @@ app.use(cors({
 connectDB();
 
 // Middleware
-app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
